@@ -178,7 +178,8 @@ else ifeq ($(platform), ps2)
 	CFLAGS += -G0 -DPS2 -DABGR1555
 	CXXFLAGS += -G0 -DPS2 -DABGR1555
 	STATIC_LINKING=1
-   NEED_RWAV = 0
+    NEED_RWAV = 0
+	
 else ifeq ($(platform), vita)
    TARGET := $(TARGET_NAME)_libretro_$(platform).a
    CC = arm-vita-eabi-gcc
